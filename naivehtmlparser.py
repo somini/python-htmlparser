@@ -3,7 +3,10 @@
 Python 3.x HTMLParser extension with ElementTree support.
 """
 
-from html.parser import HTMLParser
+try:
+    from html.parser import HTMLParser
+except:
+    from HTMLParser import HTMLParser
 from xml.etree import ElementTree
 
 
